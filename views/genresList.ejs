@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Genres List</title>
+  </head>
+  <body>
+    <h1>Genres List</h1>
+    <ul style="display: flex; flex-direction: column; gap: 15px; padding: 20px; background-color : #b7b6aa; ">
+      <% genres.forEach((genre) => { %>
+        <li style="border: 2px solid black; width: 300px; list-style: none; padding: 10px 15px;"><%= genre %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

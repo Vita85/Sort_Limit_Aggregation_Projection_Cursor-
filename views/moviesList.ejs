@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= "Movies List" %></title>
+  </head>
+  <body>
+    <h1><%= "Movies List" %></h1>
+    <ul style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px; padding: 20px; background-color : #b7b6aa; ">
+      <% movies.forEach((movie) => { %>
+        <li style="border: 2px solid black; width: 300px; list-style: none; padding: 10px 15px;">
+          <%= movie.title %> (<%= movie.year %>)
+        </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
